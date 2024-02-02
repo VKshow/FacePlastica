@@ -7,6 +7,7 @@
     font-family: Roboto, sans-serif;
     list-style: none;
     scroll-behavior: smooth;
+    
 }
 body{
     background: #F8FFFA;
@@ -89,13 +90,20 @@ li{
 }
 
 .header__logo {
-    max-width: 96px
+    max-width: 230px;
+    margin-right: 60px;
+
 }
 
-.header__logo img {
-    width: 100%;
-    border-radius: 9px;
+.header__logo p {
+    display: inline-block;
+    font-family: 'Caveat', cursive;
+    font-size: 45px;
+    font-weight: bold;
+    color: #8309da;
+    text-shadow: 3px 3px 6px #000;
 }
+
 
 .header__links {
     display: flex;
@@ -483,6 +491,7 @@ li{
 }
 
 .menu__item {
+    
     margin-top: 30px;
     width: 46%;
     min-height: 474px;
@@ -610,41 +619,20 @@ li{
 
 .promotion__timer {
     margin-left: 170px;
-    width: 31%
+    width: 18%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 .promotion__timer img{
-    width: 100%
+    width: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-/* .promotion__timer .title {
-    text-align: right
+.promotion__timer img:hover{
+    transform: scale(1.1);
 }
 
-.promotion__timer .timer {
-    margin-top: 60px;
-    padding-left: 95px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center
-}
-
-.promotion__timer .timer__block {
-    width: 102px;
-    height: 120px;
-    background: #fff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, .25);
-    font-size: 16px;
-    font-weight: 300;
-    text-align: center
-}
-
-.promotion__timer .timer__block span {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    font-size: 56px;
-    font-weight: 700
-} */
 
 .footer {
     min-height: 180px;
@@ -699,8 +687,7 @@ li{
     background-color: #fff;
     border: 1px solid rgba(0, 0, 0, .2);
     border-radius: 4px;
-    max-height: 80vh;
-    overflow-y: auto
+    
 }
 
 .modal__close {
@@ -722,18 +709,9 @@ li{
     text-transform: uppercase
 }
 
-.modal__input {
-    display: block;
-    margin: 20px auto 20px auto;
-    width: 280px;
-    height: 50px;
-    background: #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, .2);
-    border: none;
-    font-size: 18px;
+.modal__text{
     text-align: center;
-    padding: 0 20px;
-    outline: 0
+    margin: 20px 0;
 }
 
 .modal .btn {
@@ -846,3 +824,24 @@ li{
 }
 
 
+.modal__btn{
+    padding: 10px 0;
+    display: block;
+    width: 280px;
+    margin: 0 auto;
+    text-align: center;
+    
+    background-color: #303030;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s all;
+    outline: 0;
+}
+
+.modal__btn:hover{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .3);
+
+}
