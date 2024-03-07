@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>FacePlastica</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,23 +11,58 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="css/tabs.css">
-    <link rel="stylesheet" href="css/sliderTwo.css">
+    
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slickstyle.css ">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mmenu.css">
     <link rel="stylesheet" href="css/media.css">
 
 </head>
 
 <body>
-    <header class="header">
+    <header class="header" id = 'main'>
+
+
+
+
+        <!-- mobile adaptive menu -->
+
+        <div class="mobile">
+            <div>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#main">Головна</a></li>
+                    <li><a href="#course">Про курс</a></li>
+                    <li><a href="#masterClass">Майстер класи</a></li>
+                    <li><a href="#beforeAfter">До/Пiсля</a></li>
+                    <li><a href="#programms">Програми</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+
+
+
+
         <div class="header__left-block">
             <div class="header__logo">
                 <p>Maria Kuimzhi</p>
             </div>
-            <nav class="header__links">
-                <a href="#" class="header__link">Про курс</a>
-                <a href="#" class="header__link">Майстер класи</a>
-                <a href="#" class="header__link">Програми</a>
+            <nav class="header__links menu">
+                <a href="#main" class="header__link">Головна</a>
+                <a href="#course" class="header__link">Про курс</a>
+                <a href="#masterClass" class="header__link">Майстер класи</a>
+                <a href="#beforeAfter" class="header__link"> До/Пiсля</a>
+                <a href="#programms" class="header__link">Програми</a>
             </nav>
         </div>
         <div class="header__right-block">
@@ -38,10 +73,10 @@
     <div class="sidepanel">
         <div class="sidepanel__text"><span>Social media</span></div>
         <div class="sidepanel__divider"></div>
-        <a href="#" class="sidepanel__icon">
+        <a href="https://www.instagram.com/mari_kuimzhi" target="_blank" class="sidepanel__icon">
             <img src="icons/instagram.svg" alt="instagram">
         </a>
-        <a href="#" class="sidepanel__icon">
+        <a href="https://t.me/mari_kuimzhi" target="_blank" class="sidepanel__icon">
             <img src="icons/telegram.png" alt="facebook">
         </a>
     </div>
@@ -107,7 +142,7 @@
 
     <div class="divider"></div>
 
-    <div class="offer">
+    <div class="offer" id="course">
         <div class="bgc_y"></div>
         <div class="container">
             <div class="offer__text">
@@ -141,30 +176,19 @@
                 </div>
             </div>
             <div class="offer__slider">
-                <div class="offer__slider-counter">
-                    <div class="offer__slider-prev">
-                        <img src="icons/left.svg" alt="prev">
-                    </div>
-                    <span id="current">03</span>
-                    /
-                    <span id="total">04</span>
-                    <div class="offer__slider-next">
-                        <img src="icons/right.svg" alt="next">
-                    </div>
-                </div>
-                <div class="offer__slider-wrapper">
-                    <div class="offer__slider-inner">
-                        <div class="offer__slide">
-                            <img src="img/slider/3.jpg" alt="pic">
-                        </div>
-                        <div class="offer__slide">
-                            <img src="img/slider/4.jpg" alt="pic">
-                        </div>
-                        <div class="offer__slide">
-                            <img src="img/slider/5.jpg" alt="pic">
-                        </div>
-                        <div class="offer__slide">
-                            <img src="img/slider/8.jpg" alt="pic">
+                
+                <div class="carousel_container">
+                    <div class="carousel">
+                        <div class="container">
+                            <div class=" carousel__inner-two">
+                                <div><img class="slider__img" src="img/slider/3.jpg"></div>
+                                <div><img class="slider__img" src="img/slider/4.jpg"></div>
+                                <div><img class="slider__img" src="img/slider/5.jpg"></div>
+                                <div><img class="slider__img" src="img/slider/8.jpg"></div>
+                                
+                                
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -175,7 +199,7 @@
     <div class="divider"></div>
     
     <div class="container">
-        <h2 class="title">Майстер класи</h2>
+        <h2 class="title" id="masterClass">Майстер класи</h2>
     <div class="masterclass-container">
         
         
@@ -213,16 +237,36 @@
 
     <div class="divider"></div>
 
-    <div class="calculating">
+    <div class="calculating" id="beforeAfter">
         <div class="container">
             <h2 class="title">
                 До / Пiсля
             </h2>
             <div class="sliderTwo__field">
+                <div class="carousel_container">
+                    <div class="carousel">
+                        <div class="container">
+                            <div class="carousel__inner">
+                                <div><img class="slider__img" src="img/ba/ba1.jpeg"></div>
+                                <div><img class="slider__img" src="img/ba/ba2.jpg"></div>
+                                <div><img class="slider__img" src="img/ba/ba3.jpeg"></div>
+                                <div><img class="slider__img" src="img/ba/ba4.JPG"></div>
+                                <div><img class="slider__img" src="img/ba/ba5.JPG"></div>
+                                <div><img class="slider__img" src="img/ba/ba6.JPG"></div>
+                                <div><img class="slider__img" src="img/ba/ba7.jpg"></div>
+                                <div><img class="slider__img" src="img/ba/ba8.jpeg"></div>
+                                <div><img class="slider__img" src="img/ba/ba9.jpeg"></div>
+                                <div><img class="slider__img" src="img/ba/ba10.JPG"></div>
+                                <div><img class="slider__img" src="img/ba/ba11.JPG"></div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
 
 
-
-                <div class="offer__sliderTwo">
+                <!-- <div class="offer__sliderTwo">
                     <div class="offer__slider-counterTwo">
                         <div class="offer__slider-prevTwo">
                             <img src="icons/left.svg" alt="prev">
@@ -271,7 +315,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
                 <div class="sliderTwo__descr">
@@ -308,7 +352,7 @@
 
     <div class="divider"></div>
 
-    <div class="menu">
+    <div class="programms" id="programms">
         <h2 class="title">Програми</h2>
 
         <div class="menu__field">
@@ -520,8 +564,8 @@
         <div class="container">
             <div class="social">
                 <div class="subtitle">Соцiальнi мережi:</div>
-                <a href="#" class="link">instagram</a>
-                <a href="#" class="link">telegram</a>
+                <a href="https://www.instagram.com/mari_kuimzhi" target="_blank" class="link">Instagram</a>
+                <a href="https://t.me/mari_kuimzhi" target="_blank" class="link">Telegram</a>
             </div>
             <div class="footer__logo">
                 <div class="header__logo">
@@ -530,9 +574,8 @@
             </div>
             <div class="call">
                 <div class="subtitle">
-                    Or call us</div>
-                <a href="#" class="link">+380678341034</a>
-                <a href="#" class="link">+380500941356</a>
+                    Зміни життя!</div>
+                
             </div>
         </div>
     </footer>
@@ -553,8 +596,13 @@
 
     <script src="js/bundle.js"></script>
 
-    <script src="./js/slider.js"></script>
-    <script src="./js/sliderTwo.js"></script>
+    
+    <script src="js/jQuery.js"></script>
+    <script src="js/mmenu.js"></script>
+    <script src="js/slick-script.js"></script>
+    <script src="js/slick.min.js"></script>
+
+
 </body>
 
 </html>

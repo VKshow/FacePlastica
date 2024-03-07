@@ -9,6 +9,8 @@
     scroll-behavior: smooth;
     
 }
+
+
 body{
     background: #F8FFFA;
     background: -moz-linear-gradient(left, #F8FFFA 0%, #b486d5 100%);
@@ -77,6 +79,7 @@ li{
 
 .header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     height: 150px;
@@ -86,6 +89,7 @@ li{
 .header__left-block {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     min-width: 550px
 }
 
@@ -116,6 +120,9 @@ li{
     font-weight: 700;
     font-size: 18px;
     color: #303030
+}
+.header__link:hover{
+    color: #d05a00
 }
 
 
@@ -224,6 +231,7 @@ li{
 
 .tabcontainer {
     display: flex;
+    flex-wrap: wrap;
     width: 1130px;
     height: 525px;
     overflow: hidden;
@@ -296,6 +304,7 @@ li{
 
 .offer .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between
 }
 
@@ -321,6 +330,7 @@ li{
 
 .offer__action {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end
 }
@@ -348,18 +358,18 @@ li{
 }
 
 .offer__slider {
-    /* width: 283px; */
-    width: 400px;
-    height: 560px;
+    
     margin-top: 50px;
-    margin-right: 150px;
+   
     display: flex;
+   
     flex-direction: column;
     align-items: flex-end
 }
 
 .offer__slider-counter {
     display: flex;
+    
     width: 180px;
     align-items: center;
     font-size: 24px;
@@ -448,6 +458,7 @@ li{
     width: 490px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center
 }
@@ -461,17 +472,18 @@ li{
     font-size: 42px
 }
 
-.menu {
+.programms {
     padding: 40px 0 50px 0
 }
 
-.menu .container {
+.programms .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start
 }
 
-.menu .title {
+.programms .title {
     text-align: center
 }
 
@@ -588,7 +600,8 @@ li{
 }
 
 .promotion .container {
-    display: flex
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .promotion .bgc_y {
@@ -845,3 +858,10 @@ li{
     box-shadow: 0 4px 30px rgba(0, 0, 0, .3);
 
 }
+
+.slick-next-two {
+right:176px;
+}
+.slick-prev-two {
+    right:176px;
+    }
